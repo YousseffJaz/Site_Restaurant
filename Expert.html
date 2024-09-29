@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expert</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><span>C</span>uisine tunisienne</a><br>
+        <a href="https://www.infotunisie.com/tourisme-a-sidi-bou-said/" class="Sidi">Sidi Bou Said </a>
+        <div class="menuToggle"  onclick="toggleMenu();">
+            <ul  class="navbar">
+            <li><a href="index.html" onclick="toggleMenu();">Acceuil</a></li> 
+            <li><a href="Apropos.html"  onclick="toggleMenu();">A propos</a></li> 
+            <li><a href="Menu.html" onclick="toggleMenu();">Menu</a></li> 
+            <li><a href="#" onclick="toggleMenu();" style="color: #284fdd;"><u>Expert</u></a></li> 
+            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li> 
+            <a href="" class="btn-reserve" style="color: #fff;" onclick="toggleMenu();">Reservation</a>
+        </ul>
+        </div>
+    </header>
+    <section class="menu" id="menu">
+        <div class="titre">
+            <p > Voici nos chefs cuisiniers les plus expérimentés.</p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./image/chef1.jpg" >
+                </div>
+                <div class="text">
+                    <h3>Bilel Wechtati</h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <img src="./image/chef2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3> Sami Fgaier</h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <img src="./image/chef3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Slim DOUIRI</h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <img src="./image/chef4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Wafik Belaïd</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><span>C</span>uisine tunisienne</a><br>
+        <a href="https://www.infotunisie.com/tourisme-a-sidi-bou-said/" class="Sidi">Sidi Bou Said </a>
+        <div class="menuToggle"  onclick="toggleMenu();">
+            <ul  class="navbar">
+            <li><a href="index.html" onclick="toggleMenu();">Acceuil</a></li> 
+            <li><a href="Apropos.html"  onclick="toggleMenu();">A propos</a></li> 
+            <li><a href="Menu.html" onclick="toggleMenu();">Menu</a></li> 
+            <li><a href="Expert.html" onclick="toggleMenu();">Expert</a></li> 
+            <li><a href="#" onclick="toggleMenu();" style="color: #284fdd;"><u>Contact</u></a></li> 
+            <a href="" class="btn-reserve" style="color: #fff;" onclick="toggleMenu();">Reservation</a>
+        </ul>
+        </div>
+    </header>
+    <section>
+        <section class="contact" id="contact">
+            <div class="titre noir">
+                <p>Pour toute demande ou réservation, n'hésitez pas à nous contacter</p>
+            </div>
+            <div class="contactform">
+                <h3>Envoyer un message </h3>
+                <div class="inputboite">
+                    <input type="text" placeholder="nom">
+                </div>
+                <div class="inputboite">
+                    <input type="text" placeholder="email">
+                </div>
+                <div class="inputboite">
+                    <textarea placeholder="message"></textarea>
+                </div>
+                <div class="inputboite">
+                    <input type="submit" value="Envoyer">
+                </div>
+                
+            </div>
+            </section>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>

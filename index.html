@@ -1,0 +1,48 @@
+<html lang="fr">
+    <head>
+        <meta charest="UTF-8">
+        <title>Cuisine tunisienne </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="" class="logo"><span>C</span>uisine tunisienne</a><br>
+            <a href="https://www.infotunisie.com/tourisme-a-sidi-bou-said/" class="Sidi">Sidi Bou Said </a>
+            <div class="menuToggle"  onclick="toggleMenu();">
+            <ul class="navbar">
+                <li><a href="#" style="color: #284fdd;" onclick="toggleMenu();"><u>Acceuil</u></a></li> 
+                <li><a href="Apropos.html" onclick="toggleMenu();">A propos</a></li> 
+                <li><a href="Menu.html" onclick="toggleMenu();">Menu</a></li> 
+                <li><a href="Expert.html" onclick="toggleMenu();">Expert</a></li> 
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li> 
+                <a href="" class="btn-reserve" style="color: #fff;" onclick="toggleMenu();">Reservation</a>
+            </ul>
+        </div>
+        </header>
+        <section class="banniere" id="banniere">
+            <div class="contenu"> 
+                <h1>Les Meilleurs Restaurants De Livraison De Nourriture Tunisienne</h1>
+                <br>
+                <br>
+                <h3> <u>Spécialité à Sidi Bou Said</u> </h3>
+                <br>
+                <a href="Menu.html" class="btn1">Notre Menu</a>
+                <a href="#" class="btn2">Reservation</a>
+            </div>
+        </section>
+        <script type="text/javascript">
+    
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.menuToggle');
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+                }
+        </script>
+        <!-- cette fonction toggleMenu() semble contrôler l'ouverture et la fermeture d'un menu en ajoutant ou supprimant la classe active à la fois sur la barre 
+        de navigation (.navbar) et sur le bouton ou l'élément de bascule (.menuToggle).-->
+     </body>
+</html>

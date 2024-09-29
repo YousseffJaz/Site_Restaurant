@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apropos</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><span>C</span>uisine tunisienne</a><br>
+        <a href="https://www.infotunisie.com/tourisme-a-sidi-bou-said/" class="Sidi">Sidi Bou Said </a>
+        
+        <div class="menuToggle"  onclick="toggleMenu();">
+            <ul  class="navbar">
+            <li><a href="index.html" onclick="toggleMenu();">Acceuil</a></li> 
+            <li><a href="#" style="color: #284fdd;" onclick="toggleMenu();"><u>A propos</u></a></li> 
+            <li><a href="Menu.html" onclick="toggleMenu();">Menu</a></li> 
+            <li><a href="Expert.html" onclick="toggleMenu();">Expert</a></li> 
+            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li> 
+            <a href="" class="btn-reserve" style="color: #fff;" onclick="toggleMenu();">Reservation</a>
+        </ul>
+        </div>
+    </header>
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+                <p >Vous pouvez commander toute livraison de nourriture tunisienne via la Cuisine Tunisienne proposée par nos restaurants partenaires. <br>
+                    En Tunisie, nous vous offrons un vaste choix de plats savoureux et d'accompagnements livrés directement chez vous. Vous n'avez qu'à consulter le menu et choisir ce qui vous fait envie !</p>
+            </div>
+            <div class="col50">
+                <div class="img">
+                    <img src="./image/plats3.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte"><span>A</span> Propos de la positon</h2>
+                <p >Imposante et généreuse, offrant une vue imprenable sur la baie de Tunis, chaque détail est pensé pour éveiller les sens… Des lignes pures, des objets authentiques et des luminaires modernes confèrent à chaque salle du restaurant un véritable cachet.</p>
+            </div>
+            <div class="col50">
+                <div class="img">
+                    <img src="./image/A.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>    
+</body>
+</html>l

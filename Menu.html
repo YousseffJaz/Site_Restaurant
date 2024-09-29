@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo"><span>C</span>uisine tunisienne</a><br>
+        <a href="https://www.infotunisie.com/tourisme-a-sidi-bou-said/" class="Sidi">Sidi Bou Said </a>
+        <div class="menuToggle"  onclick="toggleMenu();">
+            <ul  class="navbar">
+            <li><a href="index.html" onclick="toggleMenu();">Acceuil</a></li> 
+            <li><a href="Apropos.html" onclick="toggleMenu();">A propos</a></li> 
+            <li><a href="#" onclick="toggleMenu();"  style="color: #284fdd;"><u>Menu</u></a></li> 
+            <li><a href="Expert.html" onclick="toggleMenu();">Expert</a></li> 
+            <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li> 
+            <a href="" class="btn-reserve" style="color: #fff;" onclick="toggleMenu();">Reservation</a>
+        </ul>
+        </div>
+    </header>
+    <section class="menu" id="menu">
+        <div class="titre">
+            <p > Découvrez le meilleur des recettes de la cuisine Tunisienne, un véritable héritage des diverses cultures Tajine, chakchouka, ojja, couscous... <br> Notre Cuisine vous propose les plats tunisiens les plus populaires faciles et gourmands. Bonne appétit !
+            </p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                   <a href="https://www.pinterest.com/pin/499266308697056219/"> <img src="./image/c1.jpg" ></a>
+                </div>
+                <div class="text">
+                    <h3>Lablebi </h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <a href="https://www.tounsia.net/fr/plat-principal/2016/06/article/nwasser-mfawra-bel-allouche/"><img src="./image/c2.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Nwasser </h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <a href="https://tunisie.co/article/13209/gastronomie/cuisine/sous-secretaire-americain-au-commerce-par-interim-couscous-tunisien-meilleur-434214"><img src="./image/c3.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Koussouss </h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <a href="https://www.tourismtunisia.com/tunisian-brik-recipe/"><img src="./image/c4.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>brik tunisienne </h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <a href="https://www.notebookgourmand.com/plats/maghreb/fricasses-tunisiens-inratable/"><img src="./image/c5.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Fricassé </h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <a href="https://voyage-tunisie.info/ojja-merguez-tunisie/"><img src="./image/c6.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Ojja Merguez </h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <a href="https://cuisine.journaldesfemmes.fr/recette/323758-salade-mechouia"><img src="./image/c7.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Salade Mechwia </h3>
+                </div>
+            </div>  
+            <div class="box">
+                <div class="imbox">
+                    <a href="https://www.numsfamily.com/lifestyle/recettes/mlawi-tunisien-recette/"><img src="./image/c8.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h3>Mlawi </h3>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
